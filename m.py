@@ -10,7 +10,7 @@ import os
 bot = telebot.TeleBot('7247076690:AAFHhgRI9yuxffd2QG7xBJtV8xk11VgldOA')
 
 # Admin user IDs
-admin_id = ["6829567767", "5679673719", "7247076690", ""]
+admin_id = ["6829567767", "5679673719", "6975923843", ""]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
